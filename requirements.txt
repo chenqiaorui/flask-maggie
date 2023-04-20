@@ -1,0 +1,15 @@
+celery==5.2.3
+Flask==2.0.3
+Flask-WTF==1.0.0
+flower==1.0.0
+pytest==7.0.1
+redis==4.1.4
+python-dotenv==1.0.0
+flask_mail==0.9.1
+xlsxwriter==3.0.9
+PyJWT>=2.5.0
+peewee>=3.15.3
+bcrypt>=4.0.0
+flasgger==0.9.5
+
+
