@@ -38,7 +38,7 @@ class UserModel(BaseModel):
     update_time = DateTimeField(default=datetime.now)
 
     class Meta:
-        table_name = 'tb_user'
+        table_name = 'user'
 
     @property
     def email_list(self):
@@ -49,14 +49,7 @@ class UserModel(BaseModel):
         else:
             return []
 
+if __name__ == '__main__':
+    # 插入数据
+    UserModel.create(username='ricky', password='123456')
 
-def init_table_data():
-    data = [
-        {
-            'username': os.getenv('ADMIN_USERNAME'),
-            'password': bcrypt_util.encode_password('123456'),
-            'before_expire_days': 3,
-        }
-    ]
-
-    UserModel.insert_many(data).execute()

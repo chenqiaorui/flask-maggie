@@ -33,7 +33,7 @@ class SystemModel(BaseModel):
     update_time = DateTimeField(default=datetime.now)
 
     class Meta:
-        table_name = 'tb_system'
+        table_name = 'system'
 
 
 def init_table_data():

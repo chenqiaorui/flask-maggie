@@ -27,7 +27,7 @@ class NotifyModel(BaseModel):
     update_time = DateTimeField(default=datetime.now)
 
     class Meta:
-        table_name = 'tb_notify'
+        table_name = 'notify'
 
         indexes = (
             # 唯一索引
