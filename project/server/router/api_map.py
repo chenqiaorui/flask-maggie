@@ -3,9 +3,8 @@
 路由配置
 """
 # from domain_admin.api import cert_api, ip_api, notify_api
-# from domain_admin.api import domain_api
 # from domain_admin.api import group_api
-from project.server.api import auth_api, views, task_api, httpd_api, notify_api
+from project.server.api import auth_api, views, task_api, httpd_api, notify_api, domain_api
 
 # from domain_admin.api import system_api
 from project.server.api import user_api
@@ -30,7 +29,7 @@ routes = {
     "/api/ip": httpd_api.view_origin,
 
     # 域名
-    # "/api/addDomain": domain_api.add_domain,
+    "/api/addDomain": domain_api.add_domain,
     # "/api/updateDomainById": domain_api.update_domain_by_id,
     # "/api/deleteDomainById": domain_api.delete_domain_by_id,
     # "/api/getDomainList": domain_api.get_domain_list,
