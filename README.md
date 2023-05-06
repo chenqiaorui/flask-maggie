@@ -32,3 +32,16 @@ $ curl http://localhost:5004/api/tasks/<TASK_ID>/ -H "X-Token: eyJhbGciOiJIUzI1N
 
 ### About Celery books
 [https://www.celerycn.io/](https://www.celerycn.io/)
+
+### 功能
+这个项目可以做什么?
+```
+- 提供web服务
+- jwt鉴权
+- 添加队列任务
+- 用户登录和注册、获取用户信息
+
+技术栈：
+- celery队列
+- flask web框架
+```
